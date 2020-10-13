@@ -1,4 +1,4 @@
-# Starter Kit: Implementation of a process of traffic and activity of fishing fleet based on AIS data
+# Developer's and user's guide: Implementation of a process of traffic and activity of fishing fleet based on AIS data
 
 ## Introduction
 
