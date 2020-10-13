@@ -19,7 +19,7 @@ For the sub-processes of filtering, cleaning and processing data (responsible fo
 we have developed algorithms in Scala (processed by Apache Spark).
 
 For the sub-processes of data visualization and analysis (including traffic intensity), we have developed R language codes. 
-Additionally, we have used [movingpandas](https://anitagraser.github.io/movingpandas){:target="_blank" rel="noopener"} libraries. It is a Python library for handling movement data based on Pandas and GeoPandas. The implementation of this library allowed us to generate the traffic trajectory of the analyzed fishing fleet. 
+Additionally, we have used [movingpandas](https://anitagraser.github.io/movingpandas){:target="_blank"} libraries. It is a Python library for handling movement data based on Pandas and GeoPandas. The implementation of this library allowed us to generate the traffic trajectory of the analyzed fishing fleet. 
 
 ## Data collection and preparation of a reference of frame for fishing fleet
 
