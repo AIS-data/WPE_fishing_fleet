@@ -20,7 +20,7 @@ For the sub-processes of data visualization and analysis (including traffic inte
 
 ## Data collection and preparation of a reference of frame for fishing fleet
 The first step in implementing the process is to download the fishing fleet register for your country.
-The fleet register, available from website of the European Commission http://ec.europa.eu/fisheries/fleet/index.cfm?lg=en 
+The fleet register, available from [website of the European Commission]("http://ec.europa.eu/fisheries/fleet/index.cfm?lg=en")
 and constitutes the basis to receive data on the Polish fishing fleet as of December 31st, in a reference year. 
 Every EU country is obliged to report, maintain and update its country’s fishing fleet register in a unified format. 
 The fishing fleet register contains a lot of valuable information, e.g.
