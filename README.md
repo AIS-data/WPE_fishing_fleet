@@ -46,11 +46,11 @@ Information from web scraping was compared to the Register data and fishing flee
   <img src="./img/diagram_update_register.png" alt="Schematic diagram – supplementing incorrect/missing information via web scraping methods" width="442">
 </p>
 
-After supplementing incorrect/missing information, we created a reference frame of Polish fishing fleets (“Register”) and were able to filter AIS data (“data filtering”), thus limiting our AIS dataset. We simply removed all information from other ships. 
+After supplementing incorrect/missing information, we can create a reference frame of Polish fishing fleets (“Register”) and were able to filter AIS data (“data filtering”), thus limiting our AIS dataset. We simply removed all information from other ships. 
 
 Respecting the business activity of the providers of tracking vessel website solutions, we don't provide a specific solution, but only an example code - **URLscrape_example.py** that can be used to build your own code. Please note that the structure of individual pages may change over time. Of course, with a small amount of the fishing fleet, this process can be done manually.
 
-In addition, when verifying the register of the fishing fleet for the purposes of preparing a reference frame, we can additionally use static data by filtering the vessel type (number 30 means fishing fleet) and selecting the country origin based on the first three characters of the mmsi number. Details in the code at **FF_reference_frame.scala**
+In addition, when verifying the register of the fishing fleet, we can additionally use static data by filtering the vessel type (number 30 means fishing fleet) and selecting the country origin based on the first three characters of the mmsi number. Details in the code at **FF_reference_frame.scala**
 
 
 ## Data processing
