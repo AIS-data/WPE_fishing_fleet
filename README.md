@@ -71,8 +71,15 @@ The algorithm requires to define by the user the input data:
 
 Of course, you can prepare the database of fishing ports with its geographical coordinates and retrieve required data automatically by port selection.
 
-The first method **"Time in port"** measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. From technical point of view, it means summing up all time differences between individual messages for unique MMSI (fishing vessels) in the fishing port.
+The first method "Time in port" measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. 
+From technical point of view, it means summing up all time differences between individual messages for unique MMSI (fishing vessels) in the fishing port.
 As a result, we get the time expressed in seconds and hours.
-</p>
+
+The second method **"Activity of fishing fleet"** (call timeFishingActivity in code), measures the total time spent by fishing vessels at sea over a specified period.
+As a result, we get the time expressed in seconds and hours for fishing vessels for which the defined port is the home port.
+
+The third method **"Traffic of fishing fleet"** (call processing and checkDraught in code), measures the parameters of movement for active fishing fleet by port selected. 
+As a result, we get the average draught, max min speed, max min longitude and latitude and all distance traveled grupy by fishing vessels (MMSI numers).
+
 
 ## Data visualization
