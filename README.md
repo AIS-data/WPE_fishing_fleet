@@ -79,7 +79,7 @@ The second method **"Activity of fishing fleet"** (call timeFishingActivity in c
 As a result, we get the time expressed in seconds and hours for fishing vessels for which the defined port is the home port.
 
 The third method **"Traffic of fishing fleet"** (call processing and checkDraught in code), measures the parameters of movement for active fishing fleet by port selected. 
-As a result, we get the average draught, max min speed, max min longitude and latitude and all distance traveled grupy by fishing vessels (MMSI numers).
+As a result, we get the average draught, max min speed, max min longitude and latitude and all distance traveled group by fishing vessels (MMSI numers).
 
 During the process, statistics are also generated based on the fishing fleet register, e.g. potential fishing by ports -> **FF_registry_statistics.scala** 
 
