@@ -1,7 +1,8 @@
 ## Developer's and user's guide: Implementation of a process of traffic and activity of fishing fleet based on AIS data
 
 ## Introduction
-This guide is a deliverable of the WPE Tracking ships which is part of the ESSnet Big Data II.
+This guide is a deliverable of the WPE Tracking ships which is part of the ESSnet Big Data II. The prototype was developed by Statistics Poland
+This use-case focuses on the behaviour of the fishing fleet and its activity within fishing areas, which shall be of novelty and allow production of experimental statistics on fishing fleet behaviour. We hope that developed model shall be so universal that it can be replicated for the national statistical institutes (NSIs) and other national authorities responsible for measuring the fishing fleet.
 
 ## Overview of process
 Our general approach to developing experimental statistics on the behaviour of fishing vessels with the use of AIS data and the fishing fleet register is presented in the scheme below
