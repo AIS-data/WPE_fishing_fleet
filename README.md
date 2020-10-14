@@ -1,4 +1,4 @@
-# Developer's and user's guide: Implementation of a process of traffic and activity of fishing fleet based on AIS data
+## Developer's and user's guide: Implementation of a process of traffic and activity of fishing fleet based on AIS data
 
 ## Introduction
 This guide is a deliverable of the WPE Tracking ships which is part of the ESSnet Big Data II.
@@ -81,6 +81,7 @@ As a result, we get the time expressed in seconds and hours for fishing vessels 
 The third method **"Traffic of fishing fleet"** (call processing and checkDraught in code), measures the parameters of movement for active fishing fleet by port selected. 
 As a result, we get the average draught, max min speed, max min longitude and latitude and all distance traveled grupy by fishing vessels (MMSI numers).
 
+During the process, statistics are also generated based on the fishing fleet register, e.g. potential fishing 
 
 ## Data visualization
 The visualization process was developed in R and Python script (MovingPandas library), which enabled analysing the behaviour of fishing vessels (traffic intensity, heat maps -> **traffic_intensity_heatmaps.R** and movement of fishing vessel -> **route_fishing_vessel.R**). 
