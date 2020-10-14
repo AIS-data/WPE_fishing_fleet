@@ -54,7 +54,25 @@ In addition, when verifying the register of the fishing fleet, we can additional
 
 
 ## Data processing
+The purpose of this sub-process is to generate an experimental statistic on the traffic and activity of fishing fleet based on AIS data.
+The algorithm flow (**FF_data_processing.scala**) for the processing process is presented in the scheme below. 
 <p align="center">
   <img src="./img/diagram_processing_data.png" alt="Schematic diagram – General flow of the algorithm for data processing">
+ </p> 
+Data processing may be preceded data validation as an autonomous sub-process (we recommend) or it can be done in parallel. 
+To simplify the guide, validation for AIS data is implemented directly in the data processing code.
+Incorrect AIS data readings, especially in terms of location (longitude, latitude), have a negative impact on the generation of distances (calculate distance) for the fishing fleet. 
+
+For this purpose, we validated the data in the developed algorithm implementing the Haversine method, so that the distance between consecutive location points for a single route of fishing ship is not greater than half a degree, expressed in decimal notation (DD).
+
+The algorithm requires to define by the user the input data:
+- date of observation
+- coordinates of observation port (rectangular shape of area, called as geo-bounding box). 
+
+Of course, you can prepare the database of fishing ports with its geographical coordinates and retrieve required data automatically by port selection.
+
+The first method **"Time in port"** measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. From technical point of view, it means summing up all time differences between individual messages for unique MMSI (fishing vessels) in the fishing port.
+As a result, we get the time expressed in seconds and hours.
 </p>
+
 ## Data visualization
