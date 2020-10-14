@@ -83,3 +83,4 @@ As a result, we get the average draught, max min speed, max min longitude and la
 
 
 ## Data visualization
+The visualization process was developed in R and Python script (MovingPandas library), which enabled analysing the behaviour of fishing vessels (traffic intensity, heat maps -> **traffic_intensity_heatmaps.R** and movement of fishing vessel -> **route_fishing_vessel.R**). 
