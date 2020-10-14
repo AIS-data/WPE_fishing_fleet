@@ -71,7 +71,7 @@ The algorithm requires to define by the user the input data:
 
 Of course, you can prepare the database of fishing ports with its geographical coordinates and retrieve required data automatically by port selection.
 
-The first method "Time in port" measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. 
+The first method **"Time in port"** measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. 
 From technical point of view, it means summing up all time differences between individual messages for unique MMSI (fishing vessels) in the fishing port.
 As a result, we get the time expressed in seconds and hours.
 
