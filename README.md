@@ -11,7 +11,7 @@ Our general approach to developing experimental statistics on the behaviour of f
 </p>
 
 ## Overview of technology
-One of the motivations in the implementation of use-case for fishing fleets was the full use of Big Data methods and technologies, therefore optimal solutions were selected for individual sub-processes (programming languages, libraries, tools, see diagram above). 
+One of the motivations in the implementation of use-case for behaviour of the fishing fleet was the full use of Big Data methods and technologies, therefore optimal solutions were selected for individual sub-processes (programming languages, libraries, tools, see diagram above). 
 
 For the sub-processes of filtering, cleaning and processing data (responsible for generating statistics and preparing data structures for analyzes), 
 we have developed algorithms in **Scala** (processed by **Apache Spark / Hadoop distributed environment**).
