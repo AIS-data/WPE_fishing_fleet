@@ -50,7 +50,7 @@ After supplementing incorrect/missing information, we can create a reference fra
 
 Respecting the business activity of the providers of tracking vessel website solutions, we don't provide a specific solution, but only an example code - **URLscrape_example.py** that can be used to build your own code. Please note that the structure of individual pages may change over time. Of course, with a small amount of the fishing fleet, this process can be done manually.
 
-In addition, when verifying the register of the fishing fleet, we can additionally use static data by filtering the vessel type (number 30 means fishing fleet) and selecting the country origin based on the first three characters of the mmsi number. Details in the code at **FF_reference_frame.scala**
+In addition, when verifying the register of the fishing fleet, we can additionally use AIS static data (id 5) by filtering the vessel type (number 30 means fishing fleet) and selecting the country origin based on the first three characters of the mmsi number. Details in the code at **FF_reference_frame.scala**
 
 
 ## Data processing
