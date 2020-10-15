@@ -53,31 +53,31 @@ Please note that the structure of individual pages may change over time. Obvious
 In addition, when verifying the register of the fishing fleet, we can additionally use AIS static data (id 5) by filtering the vessel type (number 30 means fishing fleet) and selecting the country origin based on the first three characters of the mmsi number. Details in the code at **FF_reference_frame.scala**
 
 ## Data processing
-The purpose of this sub-process is to generate an experimental statistic on the traffic and activity of fishing fleet based on AIS data.
+The purpose of this sub-process is to generate an experimental statistics on the traffic and activity of fishing fleet based on AIS data.
 The algorithm flow (**FF_data_processing.scala**) for the processing process is presented in the scheme below. 
 <p align="center">
   <img src="./img/diagram_processing_data.png" alt="Schematic diagram – General flow of the algorithm for data processing">
  </p> 
-Data processing may be preceded data validation as an autonomous sub-process (we recommend) or it can be done in parallel. 
+Data processing may be preceded data validation as an autonomous sub-process (we recommend) or it can be done at the same time. 
 To simplify the guide, validation for AIS data is implemented directly in the data processing code.
 Incorrect AIS data readings, especially in terms of location (longitude, latitude), have a negative impact on the generation of distances (calculate distance) for the fishing fleet. 
 
-For this purpose, we validated the data in the developed algorithm implementing the Haversine method, so that the distance between consecutive location points for a single route of fishing ship is not greater than half a degree, expressed in decimal notation (DD).
+For this purpose, we validated the data in the developed algorithm implementing the Haversine method, so that the distance between the consecutive location points for a single route of fishing ship does not exceed half a degree, expressed in decimal notation (DD).
 
 The algorithm requires to define by the user the input data:
 - date of observation
 - coordinates of observation port (rectangular shape of area, called as geo-bounding box). 
 
-Of course, you can prepare the database of fishing ports with its geographical coordinates and retrieve required data automatically by port selection.
+Obviously, it is possible to prepare the database of fishing ports with its geographical coordinates and retrieve required data automatically by port selection.
 
 The first method **"Time in port"** measures the total time spent by all fishing vessels within the boundaries of the fishing port over the defined date of observation. 
 From technical point of view, it means summing up all time differences between individual messages for unique MMSI (fishing vessels) in the fishing port.
-As a result, we get the time expressed in seconds and hours.
+As a result, we receive the time expressed in seconds and hours.
 
 The second method **"Activity of fishing fleet"** (call timeFishingActivity in code), measures the total time spent by fishing vessels at sea over a specified period.
-As a result, we get the time expressed in seconds and hours for fishing vessels for which the defined port is the home port.
+As a result, we receive the time expressed in seconds and hours for fishing vessels for which the defined port is the home port.
 
-The third method **"Traffic of fishing fleet"** (call processing and checkDraught in code), measures the parameters of movement for active fishing fleet by port selected. As a result, we get the average draught, max min speed, max min longitude and latitude and all distance traveled group by fishing vessels (MMSI numers).
+The third method **"Traffic of fishing fleet"** (call processing and checkDraught in code), measures the parameters of movement for active fishing fleet by port selected. As a result, we receive the average draught, max min speed, max min longitude and latitude and all distance traveled group by fishing vessels (MMSI numbers).
 
 For the purpose of analyzing and obtaining the parameters of the movement of individual active fishing vessels (by selecting the MMSI number), the code -> **FF_analysis_fishing_activity.scala**
 
