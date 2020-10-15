@@ -25,13 +25,13 @@ The fleet register, available from [website of the European Commission](http://e
 and constitutes the basis to receive data on the Polish fishing fleet as of December 31st, in a reference year. 
 Every EU country is obliged to report, maintain and update its country’s fishing fleet register in a unified format. 
 The fishing fleet register contains numerous valuable information, e.g.
-•	Country/state of registration
-•	Port/place of registration
-•	Fishing licence
-•	Ship’s name
-•	Call sign
-•	Overall length
-•	Engine power
+- Country/state of registration
+- Port/place of registration
+- Fishing licence
+- Ship’s name
+- Call sign
+- Overall length
+- Engine power
 
 Based on the register, we are able to prepare a reference of frame for fishing fleet which is helpful for data filtering and limiting the size of the data set.
 
