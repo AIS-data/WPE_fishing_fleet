@@ -34,13 +34,11 @@ The fishing fleet register contains numerous valuable information, e.g.
 - Engine power
 
 Based on the register, we are able to prepare a reference of frame for fishing fleet which is helpful for data filtering and limiting the size of the data set.
-
 Each ship, regardless of the type, is identified by the mmsi number in the AIS data.
+
 It is worth noting that all fishing vessels above 15 meters long, are required to use an AIS transmitter, but most smaller fishing vessels also use the AIS system for safety reasons.
 
-Unfortunately, in many cases this number is missing in the registers. 
-To update/complete information that was missing, we implemented Python web scraping methods to selected tracking vessel website containing ship data. 
-Information from web scraping was compared to the Register data and fishing fleet dataset was updated (see diagram below).
+Unfortunately, in many cases this number is missing in the registers. To update/complete information that was missing, we implemented Python web scraping methods to selected tracking vessel website containing ship data. Information from web scraping was compared to the Register data and fishing fleet dataset was updated (see diagram below).
 <p align="center">
   <img src="./img/diagram_update_register.png" alt="Schematic diagram – supplementing incorrect/missing information via web scraping methods" width="442">
 </p>
