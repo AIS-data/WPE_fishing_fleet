@@ -63,7 +63,7 @@ object FF_reference_frame extends App {
     "WHEN substr(mmsi, 1, 3)='243'\tTHEN 'Hungary'\n  " +
     "WHEN substr(mmsi, 1, 3)='244'\tTHEN 'Netherlands'\n  " +
     "WHEN substr(mmsi, 1, 3)='245'\tTHEN 'Netherlands'\n  " +
-    "\WHEN substr(mmsi, 1, 3)='246'\tTHEN 'Netherlands'\n  " +
+    "WHEN substr(mmsi, 1, 3)='246'\tTHEN 'Netherlands'\n  " +
     "WHEN substr(mmsi, 1, 3)='247'\tTHEN 'Italy'\n  " +
     "WHEN substr(mmsi, 1, 3)='248'\tTHEN 'Malta'\n  " +
     "WHEN substr(mmsi, 1, 3)='249'\tTHEN 'Malta'\n  " +
