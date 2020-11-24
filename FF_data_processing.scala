@@ -130,6 +130,7 @@ object FF_data_processing extends App {
     return ship
   }
 
+  //haversine method - source - https://davidkeen.com/blog/2013/10/calculating-distance-with-scalas-foldleft/
   def haversineDistance(pointA: (Double, Double), pointB: (Double, Double)): Double = {
     val deltaLat = math.toRadians(pointB._1 - pointA._1)
     val deltaLong = math.toRadians(pointB._2 - pointA._2)
