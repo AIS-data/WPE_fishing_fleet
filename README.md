@@ -3,8 +3,6 @@
 ## Introduction
 This guide is a deliverable of the WPE Tracking ships which is a part of the ESSnet Big Data II. The prototype was developed by Statistics Poland. This use-case focuses on the behaviour of the fishing fleet and its activity within fishing areas, which shall be of novelty and allow production of experimental statistics on fishing fleet behaviour. We hope that the developed model shall be so universal that it can be replicated for the national statistical institutes (NSIs) and other national authorities responsible for measuring the fishing fleet.
 
-## Author - Michał Bis, Statistics Poland
-
 ## Overview of process
 Our general approach to develop experimental statistics on the behaviour of fishing vessels with the use of AIS data and the fishing fleet register is presented in the scheme below
 
@@ -87,3 +85,5 @@ During the process, statistics are also generated based on the fishing fleet reg
 
 ## Data visualization
 The visualization process was developed in R and Python script (MovingPandas library), which enabled analysing the behaviour of fishing vessels (traffic intensity, heat maps -> **traffic_intensity_heatmaps.R** and movement of fishing vessel -> **route_fishing_vessel.R**). 
+
+## Author - Michał Bis, Statistics Poland
