@@ -86,5 +86,5 @@ During the process, statistics are also generated based on the fishing fleet reg
 ## Data visualization
 The visualization process was developed in R and Python script (MovingPandas library), which enabled analysing the behaviour of fishing vessels (traffic intensity, heat maps -> **traffic_intensity_heatmaps.R** and movement of fishing vessel -> **route_fishing_vessel.R**). 
 
-
+##
 **Author - Michał Bis, Statistics Poland**
